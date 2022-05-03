@@ -1,0 +1,147 @@
+---
+sidebar: sidebar 
+permalink: get-started/requirements.html 
+keywords: what are astra kubernetes requirements, astra control requirements, astra supported versions, apps, supported apps, mariadb, mysql, postgres, kubernetes version, ubuntu, image type, networking 
+summary: 驗證Kubernetes叢集、應用程式和網頁瀏覽器的支援、開始使用Astra Control Center。 
+---
+= Astra Control Center需求
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/get-started/
+
+
+立即開始驗證Kubernetes叢集、應用程式、授權和網頁瀏覽器的支援。
+
+
+
+== Kubernetes叢集一般需求
+
+Kubernetes叢集必須符合下列一般需求、才能從Astra控制中心進行探索和管理。
+
+* *映像登錄*：您必須擁有現有的私有Docker映像檔登錄、才能將Astra Control Center建置映像推入其中。您必須擁有要上傳映像的映像登錄URL、而且您必須為私有容器登錄標記映像。
+* * Trident / ONTAP Sendor儲存組態*：Astra Control Center要求已安裝Trident版本21.01或21.04、並將其設定為與NetApp ONTAP 更新版本9.5或更新版本搭配使用、做為儲存後端。Astra Control Center需要建立儲存類別、並將其設為預設儲存類別。Astra Control Center支援ONTAP Trident提供的下列功能：
++
+** ONTAP-NAS
+** ONTAP-NAS-flexgroup
+** ONTAP-SAN
+** ONTAP-san經濟型
+
+
+
+
+如果您打算從Astra控制中心管理Kubernetes叢集、並使用叢集來裝載Astra控制中心安裝、叢集有下列額外需求：
+
+* Kubernetes的最新版本 https://kubernetes-csi.github.io/docs/snapshot-controller.html["Snapshot控制器元件"^] 已安裝
+* 一種Trident https://netapp-trident.readthedocs.io/en/latest/kubernetes/concepts/objects.html?highlight=VolumeSnapshotClass#kubernetes-volumesnapshotclass-objects["volumesnapshotClass物件"^] 已由系統管理員定義
+* 叢集上存在預設的Kubernetes儲存類別
+* 至少有一個儲存類別設定為使用Trident
+* 將Astra Control Center的FQDN指向Astra Control Center服務的外部IP位址的方法
+
+
+
+
+=== OpenShift叢集
+
+Astra Control Center需要Red Hat OpenShift Container Platform 4.6.8或4.7叢集、該叢集具有Trident儲存類別、以ONTAP 支援更新版本的版本號（以更新版本的版本為基礎）、並具有下列屬性：
+
+* 至少300 GB ONTAP 可用的不擴充儲存容量
+* 3個控制器節點、各有4個CPU核心、16GB RAM及120GB可用儲存空間
+* 3個工作節點、每個節點至少有12個CPU核心、32GB RAM和50GB可用儲存空間
+* Kubernetes版本1.19或1.20
+* 可將入口流量傳送至OpenShift叢集服務的服務類型「負載平衡器」
+* 將Astra Control Center的FQDN指向負載平衡IP位址的方法
+
+
+
+NOTE: 這些最低需求假設Astra Control Center是OpenShift叢集上唯一執行的應用程式。如果叢集正在執行其他應用程式、您需要相應地調整這些最低需求。
+
+請確定您的叢集符合最低需求、並遵循Kubernetes最佳實務做法、以便Astra Control Center在Kubernetes叢集中具有高可用度。
+
+
+NOTE: 不支援OpenShift 4.8。
+
+[NOTE]
+====
+在應用程式複製期間、Astra Control Center需要允許OpenShift掛載磁碟區並變更檔案的擁有權。因此ONTAP 、需要設定好功能才能使用下列命令成功完成Volume作業：
+
+. 「匯出原則規則修改-vserver svm0 -policyname預設-rueindex 1 -s超級 使用者sys」
+. 「匯出原則規則修改-policyname預設-rueindex 1 -anon 65534」
+
+
+====
+
+NOTE: 如果您打算將第二個OpenShift 4.6或4.7叢集新增為受管理的運算資源、則必須確保已啟用Trident Volume Snapshot功能。請參閱官方Trident https://netapp-trident.readthedocs.io/en/stable-v21.04/kubernetes/operations/tasks/volumes/snapshots.html?highlight=volumesnapshot#on-demand-volume-snapshots["說明"^] 以Trident啟用及測試Volume Snapshot。
+
+
+
+=== 應用程式管理需求
+
+Astra Control Center具備下列應用程式管理需求：
+
+* *授權*：您需要Astra Control Center授權、才能使用Astra Control Center管理應用程式。
+* * Helm 3*：如果您使用Helm來部署應用程式、Astra Control Center需要Helm版本3。完全支援使用Helm 3部署的應用程式管理與複製（或從Helm 2升級至Helm 3）。不支援以Helm 2部署的應用程式。
+* *營運者管理*：Astra Control Center不支援與營運者生命週期管理程式（OLM）相關的營運者或叢集範圍的營運者一起部署的應用程式。
+
+
+
+
+== 存取網際網路
+
+您應該判斷是否有外部網際網路存取權。如果您不接受Cloud Insights 、部分功能可能會受到限制、例如從NetApp支援網站接收監控和指標資料、或是傳送支援組合到NetApp支援網站。
+
+
+
+== 授權
+
+Astra Control Center需要Astra Control Center授權才能提供完整功能。向NetApp取得評估授權或完整授權。若無授權、您將無法：
+
+* 定義自訂應用程式
+* 建立現有應用程式的快照或複本
+* 設定資料保護原則
+
+
+如果您想要試用Astra控制中心、您可以 link:setup_overview.html#add-a-full-or-evaluation-license["使用90天試用版授權"]。
+
+
+
+== 內部部署Kubernetes叢集的服務類型「負載平衡器」
+
+Astra Control Center使用類型為「負載平衡器」（Astra Control Center命名空間中的svc/truefik）的服務、並要求指派可存取的外部IP位址。對於內部部署的OpenShift叢集、您可以使用 https://docs.netapp.com/us-en/netapp-solutions/containers/rh-os-n_LB_MetalLB.html#installing-the-metallb-load-balancer["MetalLB."^] 自動指派外部IP位址給服務。在內部DNS伺服器組態中、您應該將Astra Control Center所選的DNS名稱指向負載平衡的IP位址。
+
+
+
+== 網路需求
+
+裝載Astra Control Center的叢集會使用下列TCP連接埠進行通訊。您應確保這些連接埠可透過任何防火牆、並設定防火牆、以允許來自Astra網路的任何HTTPS輸出流量。有些連接埠需要透過託管Astra Control Center的叢集與每個託管叢集之間的連線（如適用）。
+
+|===
+| 產品 | 連接埠 | 傳輸協定 | 方向 | 目的 
+
+
+| Astra控制中心 | 443.. | HTTPS | 入侵 | UI / API存取：確保此連接埠在裝載Astra Control Center的叢集與每個受管理叢集之間都開啟 
+
+
+| Astra控制中心 | 9090 | HTTPS  a| 
+* 入口（至裝載Astra控制中心的叢集）
+* Egress（從每個受管理叢集之每個工作節點的節點IP位址隨機連接埠）
+
+| 度量資料至度量使用者：確保每個託管叢集都能存取裝載Astra控制中心的叢集上的此連接埠 
+
+
+| Trident | 34571. | HTTPS | 入侵 | 節點pod通訊 
+
+
+| Trident | 9220 | HTTP | 入侵 | 度量端點 
+|===
+
+
+== 支援的網頁瀏覽器
+
+Astra Control Center支援最新版本的Firefox、Safari和Chrome、最低解析度為1280 x 720。
+
+
+
+== 下一步
+
+檢視 link:quick-start.html["快速入門"] 總覽：

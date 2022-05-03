@@ -1,0 +1,43 @@
+---
+sidebar: sidebar 
+permalink: concepts/choose-class-and-size.html 
+keywords: service level, storage class, storage classes, pv size, persistent volume size, volume size, bandwidth, performance, persistent, volume, kubernetes, containers 
+summary: Astra Control Center僅支援ONTAP 由支援的Trident儲存類別。您應該瞭解儲存類別和持續Volume大小如何協助您達成效能目標。 
+---
+= 儲存類別和持續Volume大小
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/concepts/
+
+
+[role="lead"]
+Astra Control Center支援ONTAP 以功能不全作為後端儲存設備。您應該瞭解儲存類別和持續磁碟區（PV）大小如何協助您達成效能目標。
+
+
+
+== 總覽
+
+Astra Control Center ONTAP 目前僅支援由不支援的Trident儲存類。Astra Control Center會探索並使用已部署的資源、包括ONTAP ：功能豐富的功能、包括功能豐富的功能、功能豐富的功能、以及相關的儲存類別。
+
+
+NOTE: Trident儲存類別應預先設定在Astra Control Center之外。
+
+
+
+== 儲存類別
+
+當您將叢集新增至Astra Control Center時、系統會提示您為持續磁碟區選擇先前探索到的其中一個儲存類別。儲存類別的服務層級是針對不同的容量和頻寬需求而設計。這些探索到的儲存類別可在Astra Control Center中使用。
+
+
+
+== 持續的Volume大小與效能
+
+請參閱Trident資訊、其中提供成本比較和範例、協助您更深入瞭解如何將具有Volume大小的服務層級結合在一起、以符合您的效能目標。
+
+
+
+== 如需詳細資訊、請參閱
+
+* https://netapp-trident.readthedocs.io/en/stable-v21.01/dag/kubernetes/storage_configuration_trident.html["關於儲存組態的Trident文件"^]
+

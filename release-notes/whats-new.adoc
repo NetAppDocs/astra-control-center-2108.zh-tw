@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: release-notes/whats-new.html 
+keywords: 'what"s new, bugs, bug fixes, new features, enhancements' 
+summary: NetApp會定期更新Astra Control Center、為您提供新功能、增強功能及錯誤修復。 
+---
+= 本版Astra Control Center內容
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/release-notes/
+
+
+我們很高興宣布Astra Control Center正式推出。
+
+
+
+== 2021年8月5日（21.08）
+
+Astra Control Center正式推出。
+
+* link:../concepts/intro.html["它是什麼"]
+* link:../concepts/architecture.html["瞭解架構與元件"]
+* link:../get-started/requirements.html["開始使用所需的一切"]
+* link:../get-started/install_acc.html["安裝"] 和 link:../get-started/setup_overview.html["設定"]
+* link:../use/manage-apps.html["管理"] 和 link:../use/protect-apps.html["保護"] 應用程式
+* link:../use/manage-buckets.html["管理儲存庫"] 和 link:../use/manage-backend.html["儲存後端"]
+* link:../use/manage-users.html["管理帳戶"]
+* link:../rest-api/api-intro.html["利用API自動化"]
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* link:../release-notes/known-issues.html["此版本的已知問題"]
+* link:../release-notes/known-limitations.html["此版本的已知限制"]
+

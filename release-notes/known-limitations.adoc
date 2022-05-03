@@ -1,0 +1,99 @@
+---
+sidebar: sidebar 
+permalink: release-notes/known-limitations.html 
+keywords: astra, control center, limitations, known limitations, interoperability 
+summary: 已知限制指出本產品版本不支援的平台、裝置或功能、或是無法與產品正確互通的平台、裝置或功能。請仔細檢閱這些限制。 
+---
+= 此版本的已知限制
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/release-notes/
+
+
+已知限制指出本產品版本不支援的平台、裝置或功能、或是無法與產品正確互通的平台、裝置或功能。請仔細檢閱這些限制。
+
+
+
+== 同一個叢集無法由兩個Astra Control Center執行個體管理
+
+如果您想要管理另一個Astra Control Center執行個體上的叢集、您應該先進行 link:../use/unmanage.html#stop-managing-compute["取消管理叢集"] 在另一個執行個體上進行管理之前、請先從管理該執行個體的執行個體進行管理。從管理中移除叢集之後、請執行下列命令、確認叢集未受管理：
+
+[listing]
+----
+oc get pods n -netapp-monitoring
+----
+該命名空間中不應有執行的Pod、或命名空間不應存在。如果其中任一項為真、則叢集不受管理。
+
+
+
+== 雖然叢集和網路正常運作、但叢集仍處於移除狀態
+
+如果叢集處於「移除」狀態、但叢集和網路連線狀況良好（外部使用Kubernetes API存取叢集的嘗試成功）、則您提供給Astra Control的Kubeconfig可能不再有效。這可能是因為叢集上的憑證輪替或過期。若要修正此問題、請使用更新Astra Control中與叢集相關的認證資料 link:https://docs.netapp.com/us-en/astra-automation-2108/index.html["Astra Control API"]：
+
+. 執行POST呼叫、將更新的Kbeconfig檔案新增至「/assignon」端點、並從回應本文擷取指派的「id」。
+. 使用適當的叢集ID從「/叢集」端點執行「PUT」呼叫、並將「credentialId」設定為上一步的「id」值。
+
+
+完成這些步驟後、與叢集相關的認證資料會更新、叢集應重新連線並將其狀態更新為「可用」。
+
+
+
+== 不支援啟用OLM且叢集範圍內的營運者部署應用程式
+
+Astra Control Center不支援部署於具備營運者生命週期管理程式（OLM）功能的營運者或叢集範圍的營運者的應用程式。
+
+
+
+== 複製應用程式只能以相同的K8s發佈來完成
+
+如果您在叢集之間複製應用程式、來源叢集和目的地叢集必須是Kubernetes的相同發佈版本。例如、如果您從OpenShift 4.7叢集複製應用程式、請使用同樣為OpenShift 4.7的目的地叢集。
+
+
+
+== 不支援OpenShift 4.8
+
+7月版Astra Control Center不支援OpenShift 4.8。如需詳細資訊、請參閱 link:../get-started/requirements.html["Astra Control Center需求"]。
+
+
+
+== 不支援以Helm 2部署的應用程式
+
+如果您使用Helm來部署應用程式、Astra Control Center需要Helm版本3。完全支援使用Helm 3部署的應用程式管理與複製（或從Helm 2升級至Helm 3）。如需詳細資訊、請參閱 link:../get-started/requirements.html["Astra Control Center需求"]。
+
+
+
+== Astra Control Center不會驗證您為Proxy伺服器輸入的詳細資料
+
+請務必做到 link:../use/monitor-protect.html#add-a-proxy-server["輸入正確的值"] 建立連線時。
+
+
+
+== Astra Control Center尚未提供應用程式的資料保護功能
+
+此版本不支援使用快照、備份或還原選項、將Astra當作應用程式來管理。
+
+
+
+== 不良的Pod會影響應用程式管理
+
+如果託管應用程式的Pod處於不良狀態、Astra Control將無法建立新的備份與複製。
+
+
+
+== 現有連線至Postgres Pod會導致故障
+
+當您在Postgres Pod上執行作業時、不應直接在Pod內連線以使用psql命令。Astra Control需要psql存取來凍結及解出資料庫。如果有預先存在的連線、則快照、備份或複製都會失敗。
+
+
+
+== Trident不會從叢集解除安裝
+
+當您從Astra Control Center取消管理叢集時、Trident不會自動從叢集解除安裝。若要解除安裝Trident、您需要 https://netapp-trident.readthedocs.io/en/latest/kubernetes/operations/tasks/managing.html#uninstalling-trident["請遵循Trident文件中的下列步驟"^]。
+
+
+
+== 如需詳細資訊、請參閱
+
+* link:../release-notes/known-issues.html["此版本的已知問題"]
+
