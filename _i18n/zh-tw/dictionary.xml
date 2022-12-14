@@ -401,14 +401,12 @@
   <block id="a11ca2c2dd5144bf630dd5eb29b7cc67" category="list-text">輸入符合密碼需求的密碼。</block>
   <block id="57d4c802b66507e7e8b66d11f3a59a6f" category="list-text">再次輸入密碼進行確認。</block>
   <block id="3f0292f8eb45a8182fde5a39b52549f3" category="list-text">按一下*變更密碼*。</block>
-  <block id="90f1c6fc655d106b5040673f4fce5f99" category="section-title">重設其他使用者的密碼</block>
   <block id="777944860c5bbcdb1b4a4a0a593efb52" category="paragraph">如果您的帳戶具有「管理員」或「擁有者」角色權限、您可以重設其他使用者帳戶和您自己的密碼。當您重設密碼時、您會設定使用者登入時必須變更的暫用密碼。</block>
   <block id="109438fb5a37882f518dc1879a8744ef" category="list-text">在*使用者*索引標籤中、選取使用者*狀態*欄中的下拉式清單。</block>
   <block id="df429da64d721747277606b598df29c4" category="list-text">選擇*重設密碼*。</block>
   <block id="67873c21262ba112b2e21148d43428f5" category="list-text">輸入符合密碼需求的暫用密碼。</block>
   <block id="7d52685360edaccc999997fc87429251" category="admonition">下次使用者登入時、系統會提示使用者變更密碼。</block>
   <block id="58157b0f09846d09af0f8df56174955b" category="list-text">按一下*重設密碼*。</block>
-  <block id="a3f6d57c07e3d951867e570c6f3e5028" category="section-title">變更使用者的角色</block>
   <block id="24c0d48852d7cd070e2d6f992f4c74ab" category="paragraph">擁有擁有者角色的使用者可以變更所有使用者的角色、而擁有管理員角色的使用者則可以變更擁有管理員、成員或檢視者角色的使用者角色。</block>
   <block id="bda2a6db69313c6436901a69dc87e01b" category="list-text">在*使用者*索引標籤中、選取使用者*角色*欄中的下拉式清單。</block>
   <block id="d0c1232ab48786417ee79906f40da166" category="list-text">選取新角色、然後在出現提示時按一下「*變更角色*」。</block>
@@ -618,20 +616,17 @@
   <block id="15dd8f83e9a999edc6eae56c5aec726e" category="paragraph">本頁提供Astra Control Center入門所需步驟的高階概觀。每個步驟中的連結都會帶您前往提供更多詳細資料的頁面。</block>
   <block id="b777e6ba4555d404b00c2436d03ae649" category="inline-link-macro">授權資訊</block>
   <block id="dc9e569caa79effd430c7ea63ceff7be" category="paragraph">歡迎試用！如果您想要試用Astra Control Center、可以使用90天試用版授權。請參閱 <block ref="3d35b4f40b39e7d8200f90f9d624f8f4" category="inline-link-macro-rx"></block> 以取得詳細資料。</block>
-  <block id="4854d4c0301c6f34c76f1cb78057e09e" category="list-title">span class="image"&gt;&lt;imgrc=<block ref="0c3becc25d95e48b9ca863002a042824" category="inline-link-rx"></block> alt="1"&gt;&lt;/span&gt;檢閱Kubernetes叢集需求</block>
   <block id="8a66a5ad22aef4e75d3ac4b3dc1791e7" category="list-text">Astra可搭配Kubernetes叢集搭配Trident設定ONTAP 的功能、以提供後端的儲存功能。</block>
   <block id="0deb5023224ed4d71135e9bae6dff9d4" category="list-text">叢集必須以健全狀態執行、且至少有三個線上工作者節點。</block>
   <block id="5f08198ddd920cae8e4af705793b2a56" category="list-text">叢集必須執行Kubernetes。</block>
   <block id="e34728b4f7a3f87b9d4e4bc0568096e1" category="inline-link-macro">深入瞭解Astra Control Center需求</block>
   <block id="dc36d12219c1097713b63def4e923028" category="paragraph"><block ref="cb100f378703845999b4907e7c8315fb" category="inline-link-macro-rx"></block>。</block>
-  <block id="9384595b10ef347b2da67882c7b37bd7" category="list-title">span class="image"&gt;&lt;imgrc=<block ref="c9bdd0fd7d7224adcf67691b15f15281" category="inline-link-rx"></block> Alt="2"&gt;&lt;/span&gt;下載並安裝Astra控制中心</block>
   <block id="1f013f19e75011210ca17bbd9cf6c443" category="list-text">從NetApp支援網站下載Astra Control Center。</block>
   <block id="276a11727deff1a1f5ebf349b23835fc" category="list-text">在您的本機環境中安裝Astra Control Center。</block>
   <block id="111c233b1effa56ddf0f043c699a499d" category="list-text">探索ONTAP 以支援的Trident組態、並以支援的功能為後盾。</block>
   <block id="4c4de1b50b600f81eec6bc5f9eafe8ca" category="paragraph">在我們的第一版中、您將在OpenShift登錄上安裝映像、或使用您的本機登錄。</block>
   <block id="4cb444388821c2b32d8c80c962e7f1c0" category="inline-link-macro">深入瞭解如何安裝Astra Control Center</block>
   <block id="868d347e9c5a5e26320992d6e87924f1" category="paragraph"><block ref="85d4e7b942cbd0c7d715ed76a5e5652f" category="inline-link-macro-rx"></block>。</block>
-  <block id="80de081c75779cda8e2db1de0f292684" category="list-title">span class="image"&gt;&lt;imgrc=<block ref="ddd753dc2858fe3a5582f20b300a0541" category="inline-link-rx"></block> alt="there"&gt;&lt;/span&gt;完成一些初始設定工作</block>
   <block id="f13e95a655fb97423bd52082209d8781" category="list-text">新增授權。</block>
   <block id="89a40ca78d4ff20ec6d54ba006768895" category="list-text">新增Kubernetes叢集、Astra Control Center會探索詳細資料。</block>
   <block id="87d2ee45afe04a74320927b3cc97c4ef" category="list-text">新增ONTAP 功能：</block>
@@ -721,7 +716,6 @@
   <block id="5d7fba152c80f5fa7ccc3386b01488f7" category="cell">度量端點</block>
   <block id="f370975993dbb1e7c1e24af01ed7986c" category="section-title">支援的網頁瀏覽器</block>
   <block id="5ee52824555f7e54b800612663b9f098" category="paragraph">Astra Control Center支援最新版本的Firefox、Safari和Chrome、最低解析度為1280 x 720。</block>
-  <block id="0a20c90d5270bed19fcaf851778c663b" category="section-title">下一步</block>
   <block id="159b2efa467f3d1f53e7c16668353bf5" category="inline-link-macro">快速入門</block>
   <block id="77a7c94739d3e3b6a3c106162739bbcd" category="paragraph">檢視 <block ref="4a78f9b7a1530228ea4c970be46c5b94" category="inline-link-macro-rx"></block> 總覽：</block>
   <block id="4b82d2ba916f71f80b166a691297f031" category="summary">您可以上傳並驗證由協力廠商憑證授權單位（CA）簽署的TLS憑證、以取代自行簽署的Astra Control Center憑證。</block>
@@ -823,7 +817,6 @@
   <block id="0543a7666bf24a7b098b17a6168941d2" category="list-text">從「庫位」對話方塊中、選取「*新增*」或「*使用現有*」索引標籤。</block>
   <block id="44c089fc47e708b71926c830cc30454e" category="list-text">在Astra Control中輸入認證與其他認證不同的名稱。</block>
   <block id="43546cbd84ee48528f9cf248dcfb2c39" category="list-text">從剪貼簿貼上內容、輸入存取ID和秘密金鑰。</block>
-  <block id="3f297ef15cde0668e93b35f2752fd4fd" category="section-title">接下來呢？</block>
   <block id="f5c61eabb41590a473fa2d0d115e63c1" category="paragraph">現在您已經登入Astra Control Center並新增叢集、就可以開始使用Astra Control Center的應用程式資料管理功能。</block>
   <block id="a2ef00bfa82a9800d86855a4a32ccef6" category="list-text"><block ref="a2ef00bfa82a9800d86855a4a32ccef6" category="inline-link-macro-rx"></block></block>
   <block id="a4338c4608081cbe5421e9459f9dc53a" category="list-text"><block ref="a4338c4608081cbe5421e9459f9dc53a" category="inline-link-macro-rx"></block></block>
@@ -963,7 +956,6 @@
   <block id="a9a11c7d000cd067981f61a0db579f74" category="summary">您應該執行易用性檢查、以確保叢集已準備好新增至Astra控制中心。</block>
   <block id="0ab8b406c4d5e3b8a7e5b402912b73fc" category="doc">新增叢集的必要條件</block>
   <block id="84fccda9e18ab736ae1e33ef33ff8543" category="paragraph">在新增叢集之前、您應確保符合先決條件。您也應該執行資格檢查、以確保叢集已準備好新增至Astra控制中心。</block>
-  <block id="32ce911ba9da44dfbcba79bbe607d8f0" category="section-title">新增叢集之前所需的資源</block>
   <block id="ef80043bd2a86758eccc4f4343f62cd8" category="list-text">執行OpenShift 4.6或4.7的叢集、其Trident StorageClass以ONTAP 支援功能為後盾、可支援使用支援版本號為9、5或更新版本。</block>
   <block id="ef348e4f91a7ac009ad72205db7a3796" category="list-text">一或多個工作節點、至少有1GB RAM可供執行遙測服務。</block>
   <block id="c7e3f27c8dc77edbffd0cfa507fc83a5" category="admonition">如果您打算將第二個OpenShift 4.6或4.7叢集新增為受管理的運算資源、則應確保已啟用Trident Volume Snapshot功能。請參閱官方Trident<block ref="c6f82b497fe4e47526fecae4253a69a5" category="inline-link-rx"></block> 以Trident啟用及測試Volume Snapshot。</block>
@@ -1212,7 +1204,6 @@
   <block id="1bca7607e51d744e7281a7c4772adc9f" category="inline-link-macro">取消管理叢集</block>
   <block id="1f7a30a87f1e03ae9b4e5a75054aea44" category="paragraph">如果您想要管理另一個Astra Control Center執行個體上的叢集、您應該先進行 <block ref="db506b8ca3f9d6b67f586ae44373200f" category="inline-link-macro-rx"></block> 在另一個執行個體上進行管理之前、請先從管理該執行個體的執行個體進行管理。從管理中移除叢集之後、請執行下列命令、確認叢集未受管理：</block>
   <block id="df968f82e7fe0ad4aa9c7e7fa3f7746b" category="paragraph">該命名空間中不應有執行的Pod、或命名空間不應存在。如果其中任一項為真、則叢集不受管理。</block>
-  <block id="015b7ce9577ab8215272b79fab0e4df6" category="section-title">雖然叢集和網路正常運作、但叢集仍處於移除狀態</block>
   <block id="d2345544e5b85f26908fbbfcea4178f8" category="inline-link-macro">Astra Control API</block>
   <block id="b39fb1c7e8ea55e359b3d7e09394e294" category="paragraph">如果叢集處於「移除」狀態、但叢集和網路連線狀況良好（外部使用Kubernetes API存取叢集的嘗試成功）、則您提供給Astra Control的Kubeconfig可能不再有效。這可能是因為叢集上的憑證輪替或過期。若要修正此問題、請使用更新Astra Control中與叢集相關的認證資料 <block ref="94f95e5c5cd8bdb2e8ee724483dff233" category="inline-link-macro-rx"></block>：</block>
   <block id="66edf4995b8868e964c7fcd7d02a19e0" category="list-text">執行POST呼叫、將更新的Kbeconfig檔案新增至「/assignon」端點、並從回應本文擷取指派的「id」。</block>
@@ -1234,7 +1225,6 @@
   <block id="6dd84389e57d1bd5301a28cd06213505" category="paragraph">如果託管應用程式的Pod處於不良狀態、Astra Control將無法建立新的備份與複製。</block>
   <block id="52613a0e2a34040faff2fa3713d61414" category="section-title">現有連線至Postgres Pod會導致故障</block>
   <block id="a3e438b957ae4a8b4731d63d2e88365f" category="paragraph">當您在Postgres Pod上執行作業時、不應直接在Pod內連線以使用psql命令。Astra Control需要psql存取來凍結及解出資料庫。如果有預先存在的連線、則快照、備份或複製都會失敗。</block>
-  <block id="39feb634693572723a378befc20023aa" category="section-title">Trident不會從叢集解除安裝</block>
   <block id="185d9e7bb43f5673a0095e89e4b5cfc9" category="inline-link">請遵循Trident文件中的下列步驟</block>
   <block id="e3fd2eaf4e2e3991f2fa94391b8121cb" category="paragraph">當您從Astra Control Center取消管理叢集時、Trident不會自動從叢集解除安裝。若要解除安裝Trident、您需要<block ref="a3367f4bf1eb45533cb3cef3b2543411" category="inline-link-rx"></block>。</block>
   <block id="740eb4189d3efee5546cc5fba4fded77" category="inline-link-macro">此版本的已知問題</block>
@@ -1331,14 +1321,12 @@
   <block id="4fc8b8758715863e1a09b124319f8e9b" category="section-title">額外備份會保留為排程備份的一部分</block>
   <block id="24d522ed56286396130064a0fbfa76f1" category="inline-link">強制刪除</block>
   <block id="dbc57eeb568c4f7aa06ae84684698ee2" category="paragraph">有時Astra Control Center中的一或多個備份會保留超過備份排程中指定的保留數量。這些額外的備份應作為排程備份的一部分刪除、但不會刪除、而且會陷入「擱置中」狀態。若要解決此問題、<block ref="0f00fd869a264f948f8b24f6a8d62799" category="inline-link-rx"></block> 額外備份：</block>
-  <block id="5b3294628def37531167489c5f2faf95" category="section-title">除了預設值、Clone作業無法使用其他儲存區</block>
   <block id="9f097dac85ac3ea6adc46bf130f734ac" category="inline-link-macro">變更庫位預設值</block>
   <block id="402051f4be0cc3aad33bcf3ac3d6532b" category="inline-link-macro">備份</block>
   <block id="bb2ac0b8da1f64a3498af147ba43fc10" category="inline-link-macro">還原</block>
   <block id="7c922cc9c47040e49d8d572ed1a29f5b" category="paragraph">在應用程式備份或應用程式還原期間、您可以選擇性地指定庫位ID。不過、應用程式複製作業一律會使用已定義的預設儲存區。沒有選項可變更實體複本的儲存區。如果您想要控制所使用的儲存桶、您也可以選擇 <block ref="aefe6ea1b0b92dd65028296dfe305ad3" category="inline-link-macro-rx"></block> 或執行 <block ref="5a0ced1a5e4eaf523ec6c8f1e4de7f81" category="inline-link-macro-rx"></block> 接著是A <block ref="ade375e828882781f654729e54a482ee" category="inline-link-macro-rx"></block> 獨立提供。</block>
   <block id="36b09903bc03f599758bd10a012681dc" category="section-title">使用Astra Control Center管理叢集失敗、因為預設的Kbeconfig檔案包含多個內容</block>
   <block id="c2ac98d7ceae8e47ff6c393623bd7c1e" category="paragraph">您無法在其中使用多個叢集和內容的Kbeconfig。請參閱 <block ref="5c6ea7df10319b240eb35135a35a3cb5" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
-  <block id="d9ad9044513bb2a4324591a9e0425c85" category="section-title">無法判斷擴充環境中的ASUP tar套件狀態</block>
   <block id="8dd229c6200bbf048b3b445da43b7c8a" category="paragraph">在ASUP採樣期間、UI中的套裝組合狀態會報告為「collection」（正在收集）或「done」（單一）。大型環境最多需要一小時的收集時間。ASUP下載期間、套裝組合的網路檔案傳輸速度可能不足、而且下載可能會在15分鐘後逾時、UI中並無任何指示。下載問題取決於ASUP的大小、擴充的叢集大小、以及收集時間是否超過七天限制。</block>
   <block id="886724137bc7914c606d6d8869d43fdc" category="section-title">解除安裝Astra Control Center無法清除受管理叢集上的監控操作員Pod</block>
   <block id="bf4630e3d3e7f4201dd37b09622ec440" category="paragraph">如果在卸載Astra Control Center之前未取消管理叢集、您可以使用下列命令手動刪除NetApp監控命名空間和命名空間中的Pod：</block>
@@ -1406,4 +1394,24 @@
   <block id="f28aaf8670a5d0a4f80f0bf5fccb4b1c" category="sidebar">Astra簡介</block>
   <block id="0460583622f03a52d7693094d6fa2452" category="sidebar">概念</block>
   <block id="8d85c59d57ad2cafad4f894413219af0" category="sidebar">儲存類別和PV大小</block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">結果</block>
+  <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">一</block>
+  <block id="13a0d74de4f994f2861da351c22e5549" category="list-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 檢閱Kubernetes叢集需求</block>
+  <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">二</block>
+  <block id="6e6d8bfff1b16149f8c62cfee0d2f62e" category="list-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 下載並安裝Astra Control Center</block>
+  <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">三</block>
+  <block id="ba9e9d1eb144bbf0eb66ffe3fb01e03a" category="list-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 完成一些初始設定工作</block>
+  <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">四</block>
+  <block id="9824425bd5418e5e140ee6b8561b8914" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 使用Astra控制中心</block>
+  <block id="e5d9de39f7ca1ba2637e5640af3ae8aa" category="inline-image-macro">五</block>
+  <block id="4e661ed0899ae91f577701320636fabf" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> 請從本快速入門繼續</block>
+  <block id="d59db7846bd10b6d60d21543df9faa9e" category="paragraph-title">您需要的產品</block>
+  <block id="58eaebf972358f1cf03d386a4ade1a0f" category="section-title">接下來呢？</block>
+  <block id="01e12de62fa77fda2815719aed8ff892" category="section-title">下一步</block>
+  <block id="190b1d4301402be73ef9a56adefaf47b" category="section-title">新增叢集之前所需的功能</block>
+  <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">關於這項工作</block>
+  <block id="b0bec2358236d5d91345b1e9e0a81746" category="section-title">叢集已進入<block ref="b07286ebbb5bc7aa91cc3eaa8bc19711" prefix=" " category="inline-code"></block> 雖然叢集和網路的運作方式與預期相同、但狀態仍可正常運作</block>
+  <block id="65d25f81ce4ac60dc17acfe9f1c44ce1" category="section-title">Trident不會從叢集解除安裝</block>
+  <block id="53c5fac0ba78b08ca3f0a270b746c5d2" category="section-title">重設其他使用者的密碼</block>
+  <block id="edb74efc05972c268b6cccf83996ac3e" category="section-title">變更使用者角色</block>
 </blocks>
