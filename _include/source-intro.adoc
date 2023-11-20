@@ -58,8 +58,7 @@ Astra Control Center不支援部署於具備營運者生命週期管理程式（
 
 NetApp已驗證某些應用程式、以確保快照與備份的安全性與一致性。
 
-* https://docs.netapp.com/us-en/astra/learn/validated-vs-standard.html["瞭解Astra Control Service中已驗證的應用程式與標準應用程式之間的差異"^]。
-* https://docs.netapp.com/us-en/astra-control-center/concepts/validated-vs-standard.html["瞭解Astra Control Center中已驗證的應用程式與標準應用程式之間的差異"^]。
+* link:../concepts/validated-vs-standard.html["瞭解Astra Control Center中已驗證的應用程式與標準應用程式之間的差異"^]。
 
 
 無論您使用哪種類型的應用程式搭配Astra Control、您都應該自行測試備份與還原工作流程、以確保符合災難恢復需求。
@@ -142,7 +141,7 @@ Astra Control Center能：
 
 == 以取得更多資訊
 
-* https://docs.netapp.com/us-en/astra/index.html["Astra Control Service文件"^]
+* https://docs.netapp.com/us-en/astra-control-service/index.html["Astra Control Service文件"^]
 * https://docs.netapp.com/us-en/astra-control-center/index.html["Astra Control Center文件"^]
 * https://docs.netapp.com/us-en/trident/index.html["Astra Trident文件"^]
 * https://docs.netapp.com/us-en/astra-automation-2108/index.html["使用Astra API"^]
