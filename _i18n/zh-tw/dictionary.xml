@@ -1143,7 +1143,6 @@
   <block id="90d397f2aa31c2e6d9f5dfda5d12adca" category="paragraph">Astra Control Center可在您自己的私有雲端本機執行。</block>
   <block id="9b04dea5fba4d366b92ef41197eae5e2" category="paragraph">在第一版中、Astra Control Center將支援OpenShift Kubernetes叢集和Trident儲存後端ONTAP 搭配使用支援更新版本的更新版本。</block>
   <block id="51269e2584d26b04961877ec77db6da7" category="paragraph">在雲端連線的環境中、Astra Control Center使用Cloud Insights 「資訊中心」來提供進階的監控和遙測功能。若缺乏Cloud Insights 支援鏈接、Astra Control Center可提供有限（7天數據）的監控與遙測功能、並透過開放式指標端點匯出至Kubernetes原生監控工具（例如Prometheus和Grafana）。</block>
-  <block id="1bc8163319d46bff9915aa0226885a42" category="paragraph">Astra Control Center已完全整合AutoSupport 至整套的功能、可Active IQ 提供使用者與NetApp的疑難排解與使用資訊。</block>
   <block id="26849905a5aa23f71bc18ee28e352604" category="paragraph">您可以使用90天試用版授權試用Astra Control Center。評估版本可透過電子郵件和社群（Slack Channel）選項來支援。此外、您也可以從產品內的支援儀表板存取知識庫文章和文件。</block>
   <block id="b4851e92b19af0c5c82447fc0937709d" category="inline-link">需求</block>
   <block id="e63cc3795b9216d59b085bd3111a248d" category="paragraph">若要安裝及使用Astra Control Center、您必須符合特定需求<block ref="bdde32b2c988689d803729c06660acb4" category="inline-link-rx"></block>。</block>
@@ -1420,4 +1419,5 @@
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
   <block id="931607e4df934f12f0a0d0323f739e8c" category="list-text"><block ref="46bdba95fad7359beee853f2ee144260" category="inline-link-macro-rx"></block>。</block>
   <block id="8c12e73d5653755d89cc3e42b0fa4b92" category="list-text"><block ref="8c12e73d5653755d89cc3e42b0fa4b92" category="inline-link-rx"></block></block>
+  <block id="4ffa5f8c75a25d5db0add99affd09af7" category="paragraph">Astra Control Center 已完全整合至 AutoSupport 和 Active IQ 數位顧問（也稱為數位顧問）生態系統、為使用者和 NetApp 提供疑難排解和使用資訊。</block>
 </blocks>

@@ -30,3 +30,6 @@ sidebar:
   - section: support
   - title: 法律聲明
     url: "/legal-notices.html"
+product-family:
+  name: Astra
+  repo: astra-family
